@@ -7,6 +7,8 @@ const passwordInput = document.getElementById("password");
 const errorName = document.querySelector("#errorName");
 const errorUserName = document.querySelector("#errorUserName")
 const errorPassword = document.querySelector("#errorPassword")
+const modal = document.querySelector(".modal")
+const modalUserName = document.querySelector(".modal-userName")
 
 document.addEventListener("keydown", function (e) {
   if (e.key === "Enter") {
@@ -29,6 +31,7 @@ form.addEventListener("submit", function (e) {
     
     if (nameInput.value === "") {
       errorName.style.visibility = "visible";
+      nameInput.focus()
       return
     }else{
         errorName.style.visibility = "hidden";
@@ -36,6 +39,7 @@ form.addEventListener("submit", function (e) {
 
     if (userNameInput.value==="") {
         errorUserName.style.visibility ="visible"
+        userNameInput.focus()
         return
     } else {
         errorUserName.style.visibility ="hidden"
@@ -43,6 +47,7 @@ form.addEventListener("submit", function (e) {
 
     if (passwordInput.value==="") {
         errorPassword.style.visibility="visible"
+        passwordInput.focus()
         return
     } else {
         errorPassword.style.visibility="hidden"
@@ -54,7 +59,17 @@ form.addEventListener("submit", function (e) {
 
   console.log(localRepo);
 
-  nameInput.value = "";
-  userNameInput.value = "";
-  passwordInput.value = "";
+  
+
+    modal.style.display = "grid"
+    modalUserName.innerHTML = `${nameInput.value}`
+
+    setTimeout(() => {
+        modal.style.display = "none"
+        window.location.href ="login.html"
+    }, 3000);
+  
+    nameInput.value = "";
+    userNameInput.value = "";
+    passwordInput.value = "";
 });
