@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+    <div class="login">
+        <form action="" class="login-form">
+            <h1 class="login-title">Giris Yap</h1>
+            <div class="login-form-group">
+                <label for="username">Kullanici:</label>
+                <input type="text" id="username" name="username">
+                <p id="errorUserName" class="error-input">*Lütfen Kullanici adi giriniz...</p>
+            </div>
+            <div class="login-form-group">
+                <label for="password">Sifre:</label>
+                <input type="password" id="password" name="password">
+                <p id="errorPassword" class="error-input">*Lütfen Sifrenizi giriniz...</p>
+                <p id="errorUser" class="error-input">*Kullanici yada Sifre hatali!</p>
+            </div>
+            <div class="login-form-button">
+                <button type="submit" class="btn-login">Giris</button>
+                <button type="button" class="btn-register">Kayit Ol</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="./JS/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+    <div class="register">
+        <form action="" class="register-form">
+            <h1 class="register-title">Kayit Ol</h1>
+            <div class="register-form-group">
+                <label for="name">Adiniz:</label>
+                <input type="text" id="name" name="name">
+                <p id="errorName" class="error-input">*Lütfen Adinizi giriniz...</p>
+            </div>
+            <div class="register-form-group">
+                <label for="username">Kullanici Adi:</label>
+                <input type="text" id="username" name="username">
+                <p id="errorUserName" class="error-input">*Lütfen Kullanici Adi giriniz...</p>
+            </div>
+            <div class="register-form-group">
+                <label for="password">Sifre:</label>
+                <input type="password" id="password" name="password">
+                <p id="errorPassword" class="error-input">*Lütfen Sifre giriniz...</p>
+            </div>
+            <div class="register-form-button">
+                <button type="submit" class="btn-register">Kayit Ol</button>
+            </div>
+
+        </form>
+    </div>
+
+    <script src="./JS/register.js"></script>
+</body>
+</html>
