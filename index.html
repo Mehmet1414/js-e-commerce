@@ -16,9 +16,67 @@
   </head>
   <body>
     <header>
+      <div class="offcanvas">
+        <div class="header-left-menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Shop</a></li>
+          <li>
+            <a href="#">Women</a>
+            <div class="for-submenu">
+              <i class="fa-solid fa-chevron-down"></i>
+              <div class="submenu">
+                <ul>
+                  <li><a href="#">KADIN GİYİM</a></li>
+                  <li><a href="#">Elbiseler</a></li>
+                  <li><a href="#">Üstler ve Tişörtler</a></li>
+                  <li><a href="#">Ceketler</a></li>
+                  <li><a href="#">Pantolon</a></li>
+                  <li><a href="#">Şortlar</a></li>
+                  <li><a href="#">Mayo</a></li>
+                  <li><a href="#">Pantolon</a></li>
+                  <li><a href="#">Şortlar</a></li>
+                  <li><a href="#">Üstler ve Tişörtler</a></li>
+                  <li><a href="#">Mayo</a></li>
+                </ul>
+                <ul>
+                  <li><a href="#">TAKILAR</a></li>
+                  <li><a href="#">Elbiseler</a></li>
+                  <li><a href="#">Üstler ve Tişörtler</a></li>
+                  <li><a href="#">Ceketler</a></li>
+                  <li><a href="#">Pantolon</a></li>
+                  <li><a href="#">Şortlar</a></li>
+                  <li><a href="#">Vücut Takıları</a></li>
+                </ul>
+                <ul>
+                  <li><a href="#">ÜSTÜN MARKALAR</a></li>
+                  <li><a href="#">Nike</a></li>
+                  <li><a href="#">Zara</a></li>
+                  <li><a href="#">Adidas</a></li>
+                  <li><a href="#">H&M</a></li>
+                  <li><a href="#">Hurley</a></li>
+                  <li><a href="#">Dockers</a></li>
+                  <li>
+                    <button>Tümünü Görüntüle </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li><a href="#">Men</a></li>
+          <li>
+            <a class="for-count" href="#">
+              Sport
+              <span class="count">new</span>
+            </a>
+          </li>
+        </div>
+      </div>
       <div class="header-left">
         <div class="header-left-logo">
-          <i class="fa-solid fa-burger"></i>
+          <i
+            class="fa-solid fa-burger open-offcanvas"
+            onclick="toggleElement()"
+          ></i>
           <a href="/">
             .Store
             <span class="circle"></span>
@@ -92,19 +150,21 @@
         </div>
       </div>
       <div class="header-right">
+        <div class="header-right-favorite">
+          <i class="fa-solid fa-heart"></i>
+          <span class="count">10</span>
+        </div>
+        <div class="header-right-cart">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span class="count">20</span>
+        </div>
         <div class="header-right-price">
           <span>Total</span>
           <span class="total-price">0$</span>
         </div>
-        <div class="header-right-favorite">
-          <i class="fa-solid fa-heart"></i>
-          <span class="count">0</span>
-        </div>
-        <div class="header-right-cart">
-          <i class="fa-solid fa-cart-shopping"></i>
-          <span class="count">0</span>
-        </div>
       </div>
     </header>
+
+    <script src="./JS/index.js"></script>
   </body>
 </html>
